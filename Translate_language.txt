@@ -1,0 +1,27 @@
+TRANSLATE_LANGUAGES = {
+    "Assamese": "asm_Beng",
+    "Bengali": "ben_Beng",
+    "Bodo": "brx_Deva",
+    "Dogri": "doi_Deva",
+    "English": "eng_Latn",
+    "Konkani": "gom_Deva",
+    "Gujarati": "guj_Gujr",
+    "Hindi": "hin_Deva",
+    "Kannada": "kan_Knda",
+    "Sanskrit": "san_Deva",
+    "Punjabi": "pan_Guru",
+    "Malayalam": "mal_Mlym",
+    "Odia": "ory_Orya",
+    "Nepali": "npi_Deva",
+    "Maithili": "mai_Deva",
+    "Santali": "sat_Olck",
+    "Marathi": "mar_Deva",
+    "Tamil": "tam_Taml",
+    "Telugu": "tel_Telu",
+    "Urdu": "urd_Arab"
+}
+
+
+
+
+
