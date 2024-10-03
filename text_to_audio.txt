@@ -1,0 +1,13 @@
+TEXT_TO_AUDIO = {
+    "Bengali": "ben",
+    "English": "eng",
+    "Hindi": "hin",
+    "Kannada": "kan",
+    "Tamil": "tam",
+    "Telugu": "tel",
+    "Urdu": "urd"
+}
+
+
+
+

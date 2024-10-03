@@ -35,8 +35,8 @@ def translate_text(input_text: str, src_lang: str, tgt_lang: str) -> str:
     return translations[0] if translations else ""  # Return the first translation or empty if none
 
 # New API route for text translation
-@app.post("/translate_text/")
-async def translate_text_route(text: str, tgt_lang: str = "mar_Deva", src_lang: str = "hin_Deva"):
+@app.post("/Translate_Text/")
+async def translate_text(text: str, tgt_lang: str = "mar_Deva", src_lang: str = "hin_Deva"):
     try:
         # Log the received inputs
         print(f"Received text: {text}")

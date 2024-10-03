@@ -89,7 +89,7 @@ def translate_text(input_text, src_lang, tgt_lang):
     return translations[0]  # Return the first translation
 
 # API route to transcribe and translate
-@app.post("/transcribe_and_translate/")
+@app.post("/Transcribe_and_Translate/")
 async def transcribe_and_translate(audio: UploadFile = File(...), tgt_lang: str = "hin_Deva"):
     try:
         # Read the uploaded audio file as bytes
