@@ -6,7 +6,7 @@ processor = AutoProcessor.from_pretrained("facebook/hf-seamless-m4t-medium")
 model = SeamlessM4TModel.from_pretrained("facebook/hf-seamless-m4t-medium")
 
 # from text
-text_inputs = processor(text = "Hello, my dog is cute", src_lang="eng", return_tensors="pt")
+text_inputs = processor(text = "Hello, how old are you?", src_lang="eng", return_tensors="pt")
 audio_array_from_text = model.generate(**text_inputs, tgt_lang="hin")[0].cpu().numpy().squeeze()
 
 

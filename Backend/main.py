@@ -21,6 +21,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
 # Include routers
 app.include_router(signup_router, prefix="/signup", tags=["Auth"])
 app.include_router(login_router, prefix="/login", tags=["Auth"])

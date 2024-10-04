@@ -26,17 +26,22 @@ const Hero = () => {
     setMessages([]); // Clear messages for the new contact
   };
 
-  const handleSendMessage = (messageText) => {
+  const handleSendMessage = (message) => {
+    // Handle both text and audio messages
     setMessages((prevMessages) => [
       ...prevMessages,
-      { text: messageText, sender: 'user' },
+      { ...message, sender: 'user' }, // Append sender info
     ]);
 
     // Simulate a bot response after 1 second
     setTimeout(() => {
+      const botResponse = message.type === 'text'
+        ? 'This is a dummy text response.' 
+        : 'dummy-audio-url.mp3'; // Placeholder for audio response URL
+
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: 'This is a dummy response.', sender: 'bot' },
+        { type: message.type, content: botResponse, sender: 'bot' }, // Append sender info
       ]);
     }, 1000);
   };
